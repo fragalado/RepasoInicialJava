@@ -17,4 +17,20 @@ public interface InterfazEmpleados {
 	 * @return
 	 */
 	public List<Empleados> registroEmpleado(List<Empleados> listaBD);
+	
+	/**
+	 * Método que modifica empleado segun su id
+	 * Pide el id del empleado a modificar
+	 * Devuelve la lista actualizada
+	 * @param listaBD
+	 * @return
+	 */
+	public List<Empleados> modificaEmpleado(List<Empleados> listaBD);
+	
+	/**
+	 * Método que exportará a un fichero todos los empleados o un empleado según su ID
+	 * Se exportará toda la información excepto el numero de Seguridad Social y el numero de cuenta bancaria
+	 * @param listaBD
+	 */
+	public void exportarEmpleadoFichero(List<Empleados> listaBD);
 }

@@ -7,23 +7,10 @@ public class Empleados {
 	private String nombre, apellidos, dni, fechaNac, titulacionMasAlta;
 	private int numSegSoc, numCuenta;
 
-	// Constructores
-
-	public Empleados(int id, String nombre, String apellidos, String dni, String fechaNac, String titulacionMasAlta,
-			int numSegSoc, int numCuenta) {
-		super();
-		this.id = id;
-		this.nombre = nombre;
-		this.apellidos = apellidos;
-		this.dni = dni;
-		this.fechaNac = fechaNac;
-		this.titulacionMasAlta = titulacionMasAlta;
-		this.numSegSoc = numSegSoc;
-		this.numCuenta = numCuenta;
-	}
+	// Constructores -> Constructor vacío
 
 	// Propiedades básicas
-
+	
 	public int getId() {
 		return id;
 	}
@@ -86,5 +73,14 @@ public class Empleados {
 
 	public void setNumCuenta(int numCuenta) {
 		this.numCuenta = numCuenta;
+	}
+	
+	// toString
+	
+	@Override
+	public String toString() {
+		return "[nombre=" + nombre + ", apellidos=" + apellidos + ", dni=" + dni + ", fechaNac=" + fechaNac
+				+ ", titulacionMasAlta=" + titulacionMasAlta + ", numSegSoc=" + numSegSoc + ", numCuenta=" + numCuenta
+				+ "]";
 	}
 }
